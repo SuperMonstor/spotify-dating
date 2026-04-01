@@ -57,18 +57,22 @@ export default function Fingerprint() {
             {p.topArtists.map((a) => (
               <div
                 key={a.name}
-                className="aspect-square flex flex-col items-center justify-center p-2 text-center"
-                style={{ backgroundColor: a.color }}
+                className="aspect-square relative overflow-hidden group"
               >
-                <span className="text-3xl font-black text-black sm:text-4xl">
-                  {a.initial}
-                </span>
-                <span className="text-[9px] font-bold text-black/60 uppercase tracking-wider mt-1 leading-tight">
-                  {a.name}
-                </span>
-                <span className="text-xs font-black text-black/80 mt-0.5">
-                  {a.popularity}
-                </span>
+                <img
+                  src={a.image}
+                  alt={a.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-2">
+                  <span className="text-[9px] font-bold text-white uppercase tracking-wider leading-tight block">
+                    {a.name}
+                  </span>
+                  <span className="text-xs font-black text-[#ff4d00]">
+                    {a.popularity}
+                  </span>
+                </div>
               </div>
             ))}
           </div>

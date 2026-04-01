@@ -59,13 +59,19 @@ export default function Profile() {
               {mockFingerprint.topArtists.map((a) => (
                 <div
                   key={a.name}
-                  className="aspect-square flex flex-col items-center justify-center p-1 text-center"
-                  style={{ backgroundColor: a.color }}
+                  className="aspect-square relative overflow-hidden"
                 >
-                  <span className="text-xl font-black text-black">{a.initial}</span>
-                  <span className="text-[8px] font-bold text-black/60 uppercase tracking-wider mt-0.5">
-                    {a.name}
-                  </span>
+                  <img
+                    src={a.image}
+                    alt={a.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-1">
+                    <span className="text-[8px] font-bold text-white uppercase tracking-wider leading-tight block">
+                      {a.name}
+                    </span>
+                  </div>
                 </div>
               ))}
             </div>

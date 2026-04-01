@@ -35,12 +35,12 @@ export const mockFingerprint = {
     { era: "Pre-90s", pct: 0.06 },
   ],
   topArtists: [
-    { name: "Radiohead", popularity: 78, initial: "Rh", color: "#ff4d00" },
-    { name: "Bonobo", popularity: 62, initial: "Bo", color: "#3b82f6" },
-    { name: "Nujabes", popularity: 58, initial: "Nu", color: "#8b5cf6" },
-    { name: "Khruangbin", popularity: 68, initial: "Kh", color: "#16a34a" },
-    { name: "Anoushka Shankar", popularity: 42, initial: "AS", color: "#f59e0b" },
-    { name: "Burial", popularity: 51, initial: "Bu", color: "#ec4899" },
+    { name: "Radiohead", popularity: 78, initial: "Rh", color: "#ff4d00", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/RadioheadO2211125_composite.jpg/330px-RadioheadO2211125_composite.jpg" },
+    { name: "Bonobo", popularity: 62, initial: "Bo", color: "#3b82f6", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/RF_2806_Bonobo_Krists_Luhaers-16_%2835611151756%29.jpg/330px-RF_2806_Bonobo_Krists_Luhaers-16_%2835611151756%29.jpg" },
+    { name: "Nujabes", popularity: 58, initial: "Nu", color: "#8b5cf6", image: "https://upload.wikimedia.org/wikipedia/en/4/4a/Nujabes_performing_live.jpg" },
+    { name: "Khruangbin", popularity: 68, initial: "Kh", color: "#16a34a", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Khruangbin_am_Haldern_Pop_Festival_2019_-_09_-_Foto_Alexander_Kellner.jpg/330px-Khruangbin_am_Haldern_Pop_Festival_2019_-_09_-_Foto_Alexander_Kellner.jpg" },
+    { name: "Anoushka Shankar", popularity: 42, initial: "AS", color: "#f59e0b", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Anoushka_Shankar_-3623.jpg/330px-Anoushka_Shankar_-3623.jpg" },
+    { name: "Burial", popularity: 51, initial: "Bu", color: "#ec4899", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Burial1.svg/330px-Burial1.svg.png" },
   ],
   nicheSignals: [
     "downtempo electronica",
