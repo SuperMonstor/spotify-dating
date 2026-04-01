@@ -9,9 +9,6 @@ export default function Landing() {
           <div className="h-16 w-16 bg-[#ff4d00] flex items-center justify-center mb-8">
             <span className="text-3xl font-black text-black">T</span>
           </div>
-          <p className="text-[#ff4d00] text-xs tracking-[0.3em] uppercase mb-6">
-            For listeners with 20,000+ minutes
-          </p>
           <h1 className="text-5xl sm:text-7xl font-black tracking-tighter leading-[0.85] mb-8">
             Match with someone
             <br />
@@ -25,6 +22,25 @@ export default function Landing() {
             We use it to find your person.
           </p>
         </div>
+
+        {/* Exclusivity gate */}
+        <section className="mb-20">
+          <div className="border border-zinc-800 p-10 sm:p-14 text-center">
+            <p className="text-[#ff4d00] text-xs tracking-[0.3em] uppercase mb-4">
+              Entry Requirement
+            </p>
+            <p className="text-5xl sm:text-7xl font-black tracking-tighter text-[#ff4d00] mb-4">
+              20,000+
+            </p>
+            <p className="text-lg font-black uppercase tracking-wider mb-4">
+              Minutes Listened
+            </p>
+            <p className="text-sm text-zinc-500 max-w-md mx-auto leading-relaxed">
+              That&rsquo;s 5.5 hours a day, every day, for a year. If you don&rsquo;t have it,
+              this app isn&rsquo;t for you. If you do — you already know.
+            </p>
+          </div>
+        </section>
 
         {/* How it works */}
         <section className="mb-20">
@@ -69,7 +85,7 @@ export default function Landing() {
         <section className="mb-20 border-t border-b border-zinc-900 py-10">
           <div className="grid gap-8 sm:grid-cols-3">
             {[
-              { value: "20k+", label: "Minutes Required", sub: "Casual listeners need not apply" },
+              { value: "5–30", label: "Days to Get In", sub: "Your Spotify export is your application" },
               { value: "6", label: "Taste Dimensions", sub: "Genre, mood, obscurity, era, archetype, audio" },
               { value: "87%", label: "Avg Niche Overlap", sub: "Among top matches in Bangalore" },
             ].map((s) => (
